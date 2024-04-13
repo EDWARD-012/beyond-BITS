@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Budgeting App</title>
+    <link rel="stylesheet" href="rr.css">
+</head>
+<body>
+    <h1>Welcome to the Budgeting App</h1>
+    <div id="appContainer">
+        <!-- Your budgeting app content here -->
+        <div id="expenses">
+            <h2>Expenses</h2>
+            <ul id="expenseList"></ul>
+            <p>Total Expenses: $<span id="totalExpenses">0.00</span></p>
+            <form id="expenseForm">
+                <input type="text" id="expenseName" placeholder="Expense name">
+                <input type="number" id="expenseAmount" placeholder="Amount">
+                <button type="submit">Add Expense</button>
+            </form>
+        </div>
+        <div id="goals">
+            <h2>Financial Goals</h2>
+            <input type="number" id="goalAmount" placeholder="Goal amount">
+            <button id="setGoalBtn">Set Goal</button>
+            <p id="currentGoal"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
